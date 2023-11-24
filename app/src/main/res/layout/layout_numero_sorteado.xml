@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgBola"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bola"
+        android:layout_gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-68dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

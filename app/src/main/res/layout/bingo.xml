@@ -1,0 +1,46 @@
+<!-- res/layout/activity_numeros_sorteados.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NumerosSorteadosActivity">
+
+<!--    &lt;!&ndash; Adicione a barra de ação &ndash;&gt;-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"/>-->
+
+    <TextView
+        android:id="@+id/txtTituloNumerosSorteados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Números Sorteados"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Lista para exibir os números sorteados -->
+    <ListView
+        android:id="@+id/listaNumerosSorteados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Botão para voltar à MainActivity -->
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_gravity="center"/>
+</LinearLayout>
